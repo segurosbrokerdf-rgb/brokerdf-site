@@ -9,10 +9,19 @@
     <meta name="description" content="Broker DF - Corretora de Seguros em Brasília. Seguro Auto, Residencial, Vida e Empresarial com as melhores condições. Atendimento 24/7.">
     <meta name="keywords" content="seguro brasília, corretora seguros df, seguro auto, seguro residencial, seguro vida">
     <meta name="author" content="Broker DF">
-    
+
+    <!-- Open Graph (Compartilhamento em redes sociais) -->
+    <meta property="og:title" content="Broker DF - Corretora de Seguros Premium">
+    <meta property="og:description" content="Soluções completas em seguros: Auto, Residencial, Vida, Empresarial e mais. Atendimento humanizado em Brasília.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brokerdf.com.br">
+
+    <!-- Google Fonts otimizadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-        
         * {
             margin: 0;
             padding: 0;
@@ -973,7 +982,7 @@
     <header id="header">
         <nav>
             <div class="logo-container">
-                <svg class="logo-image" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+                <svg class="logo-image" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <g transform="translate(20, 15)">
                         <ellipse cx="50" cy="65" rx="28" ry="36" fill="#0057a8"/>
                         <circle cx="70" cy="42" r="20" fill="#0057a8"/>
@@ -983,7 +992,7 @@
                         <path d="M 28 50 Q 5 35 12 18 Q 20 28 28 50 Z" fill="#0057a8" opacity="0.9">
                             <animateTransform attributeName="transform" type="rotate" from="0 22 35" to="18 22 35" dur="2.5s" repeatCount="indefinite"/>
                         </path>
-                        <path d="M 32 58 Q 12 56 5 72 Q 18 68 32AMContinuarhtml58 Z" fill="#003d7a" opacity="0.85">
+                        <path d="M 32 58 Q 12 56 5 72 Q 18 68 32 58 Z" fill="#003d7a" opacity="0.85">
                             <animateTransform attributeName="transform" type="rotate" from="0 18 65" to="-12 18 65" dur="2.5s" repeatCount="indefinite"/>
                         </path>
                         <ellipse cx="50" cy="58" rx="32" ry="6.5" fill="white" opacity="0.95" transform="rotate(-25 50 58)"/>
@@ -998,7 +1007,7 @@
                     <div class="logo-subtitle">Corretora de Seguros</div>
                 </div>
             </div>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Abrir menu de navegação">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#servicos">Serviços</a></li>
@@ -1021,7 +1030,7 @@
             </div>
             <div class="hero-visual">
                 <div class="hero-logo-container">
-                    <svg class="hero-logo" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="hero-logo" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <defs>
                             <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
                                 <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
@@ -1144,7 +1153,7 @@
     <section id="sobre">
         <div class="about-content">
             <div class="about-image">
-                <svg class="about-logo" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <svg class="about-logo" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <defs>
                         <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" style="stop-color:#0057a8;stop-opacity:1" />
@@ -1224,7 +1233,7 @@
                             (61) 98427-5522
                         </div>
                     </a>
-                    <a href="https://wa.me/5561984275522?text=Olá! Gostaria de solicitar uma cotação de seguro." class="contact-item" target="_blank">
+                    <a href="https://wa.me/5561984275522?text=Olá! Gostaria de solicitar uma cotação de seguro." class="contact-item" target="_blank" rel="noopener">
                         <div class="contact-item-icon">📱</div>
                         <div class="contact-item-text">
                             <strong>WhatsApp</strong>
@@ -1321,8 +1330,8 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5561984275522?text=Olá! Gostaria de solicitar uma cotação." class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
-        <svg width="60" height="60" viewBox="0 0 60 60">
+    <a href="https://wa.me/5561984275522?text=Olá! Gostaria de solicitar uma cotação." class="whatsapp-float" target="_blank" rel="noopener" title="Fale conosco no WhatsApp">
+        <svg width="60" height="60" viewBox="0 0 60 60" aria-hidden="true">
             <circle cx="30" cy="30" r="28" fill="#25D366"/>
             <path d="M30 15c-8.284 0-15 6.716-15 15 0 2.872.817 5.553 2.23 7.844l-2.128 6.338 6.546-2.091A14.943 14.943 0 0030 45c8.284 0 15-6.716 15-15s-6.716-15-15-15zm7.5 20.625c-.319.903-1.591 1.66-2.625 1.875-.7.144-1.612.262-4.678-.997-3.925-1.612-6.469-5.597-6.656-5.859-.188-.263-1.547-2.053-1.547-3.919s.978-2.784 1.322-3.162c.344-.378.75-.472 1.003-.472s.506.003.728.013c.234.009.547-.09.856.653.319.769 1.087 2.634 1.181 2.828.094.194.159.422.034.684-.125.263-.188.422-.375.65-.188.225-.394.506-.563.678-.188.194-.384.403-.166.788.219.378.972 1.603 2.091 2.597 1.44 1.284 2.653 1.688 3.028 1.875.375.188.597.159.819-.094.219-.253.938-1.087 1.191-1.462.253-.375.5-.313.844-.188.344.125 2.184 1.031 2.559 1.219.375.188.625.281.719.438.094.156.094.903-.225 1.806z" fill="white"/>
         </svg>
@@ -1388,3 +1397,8 @@
     </script>
 </body>
 </html>
+
+   
+
+
+           
