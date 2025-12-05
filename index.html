@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broker DF - Corretora de Seguros Premium</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Broker DF - Corretora de Seguros em Brasília. Seguro Auto, Residencial, Vida e Empresarial com as melhores condições. Atendimento 24/7.">
+    <meta name="keywords" content="seguro brasília, corretora seguros df, seguro auto, seguro residencial, seguro vida">
+    <meta name="author" content="Broker DF">
+
+    <!-- Open Graph (Compartilhamento em redes sociais) -->
+    <meta property="og:title" content="Broker DF - Corretora de Seguros Premium">
+    <meta property="og:description" content="Soluções completas em seguros: Auto, Residencial, Vida, Empresarial e mais. Atendimento humanizado em Brasília.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brokerdf.com.br">
+
+    <!-- Google Fonts otimizadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #0057a8;
+            --dark-blue: #003d7a;
+            --light-blue: #4a90e2;
+            --accent-gold: #FFD700;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --bg-light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 3rem;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            animation: fadeInLeft 0.8s ease;
+        }
+
+        .logo-image {
+            width: 65px;
+            height: 65px;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-image:hover {
+            transform: scale(1.05) rotate(5deg);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .logo-title {
+            font-size: 1.9rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0px;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
+        .logo-subtitle {
+            font-size: 0.68rem;
+            color: var(--text-light);
+            font-weight: 500;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            margin-top: -2px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-blue), var(--light-blue));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+            color: white !important;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 87, 168, 0.3);
+        }
+
+        .nav-cta::after {
+            display: none;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 87, 168, 0.4);
+            color: white !important;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--primary-blue);
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #001f3f 0%, #003d7a 50%, #0057a8 100%);
+            padding: 100px 0 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: moveBackground 20s linear infinite;
+            opacity: 0.3;
+        }
+
+        @keyframes moveBackground {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 3rem;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 5rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text {
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 50px;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -2px;
+        }
+
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 3rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: var(--text-dark);
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-3px);
+        }
+
+        .hero-visual {
+            position: relative;
+            animation: fadeInRight 1s ease;
+        }
+
+        .hero-logo-container {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero-logo {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.4));
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .floating-cards {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .floating-card {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            animation: floatCard 4s ease-in-out infinite;
+        }
+
+        .floating-card:nth-child(1) {
+            top: 5%;
+            right: -20%;
+            animation-delay: 0s;
+        }
+
+        .floating-card:nth-child(2) {
+            bottom: 10%;
+            left: -20%;
+            animation-delay: 1s;
+        }
+
+        .floating-card:nth-child(3) {
+            top: 45%;
+            right: -15%;
+            animation-delay: 2s;
+        }
+
+        @keyframes floatCard {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .floating-card-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .floating-card-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 0.3rem;
+        }
+
+        .floating-card-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-dark);
+        }
+
+        #servicos {
+            padding: 120px 3rem;
+            background: white;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(0, 87, 168, 0.1), rgba(74, 144, 226, 0.1));
+            color: var(--primary-blue);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 25px;
+            border: 1px solid #e8e8e8;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 0;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 87, 168, 0.2);
+            border-color: transparent;
+        }
+
+        .service-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.4s ease;
+        }
+
+        .service-card:hover .service-icon {
+            background: white;
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            transition: color 0.4s ease;
+        }
+
+        .service-card:hover h3 {
+            color: white;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+            transition: color 0.4s ease;
+        }
+
+        .service-card:hover p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        #sobre {
+            padding: 120px 3rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        #sobre::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0, 87, 168, 0.05), transparent);
+            border-radius: 50%;
+        }
+
+        .about-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-logo {
+            width: 100%;
+            max-width: 450px;
+            filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.15));
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .about-text h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 2rem;
+            letter-spacing: -1px;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            line-height: 1.9;
+            margin-bottom: 2rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .feature-text h4 {
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.3rem;
+        }
+
+        .feature-text p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .stats-section {
+            padding: 80px 3rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+            color: white;
+        }
+
+        .stats-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        #contato {
+            padding: 120px 3rem;
+            background: white;
+        }
+
+        .contact-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .contact-info-section h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info-section p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+        }
+
+        .contact-items {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: var(--bg-light);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-item:hover {
+            background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+            color: white;
+            transform: translateX(10px);
+        }
+
+        .contact-item-icon {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item:hover .contact-item-icon {
+            transform: scale(1.1);
+        }
+
+        .contact-item-text strong {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-form-container {
+            background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 87, 168, 0.3);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 15px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .form-submit {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: var(--text-dark);
+            padding: 18px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .form-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #001f3f 0%, #003d7a 100%);
+            color: white;
+            padding: 4rem 3rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-about h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-about p {
+            opacity: 0.8;
+            line-height: 1.8;
+        }
+
+        .footer-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-gold);
+            transform: translateX(5px);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9999;
+            transition: transform 0.3s ease;
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hero-content,
+            .about-content,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .floating-cards {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 2rem;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1rem;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo-container">
+                <svg class="logo-image" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <g transform="translate(20, 15)">
+                        <ellipse cx="50" cy="65" rx="28" ry="36" fill="#0057a8"/>
+                        <circle cx="70" cy="42" r="20" fill="#0057a8"/>
+                        <path d="M 85 42 Q 98 42 102 46 Q 98 50 85 50 Z" fill="#FFD700"/>
+                        <circle cx="77" cy="40" r="3.5" fill="white"/>
+                        <circle cx="78" cy="39" r="1.8" fill="#1a1a1a"/>
+                        <path d="M 28 50 Q 5 35 12 18 Q 20 28 28 50 Z" fill="#0057a8" opacity="0.9">
+                            <animateTransform attributeName="transform" type="rotate" from="0 22 35" to="18 22 35" dur="2.5s" repeatCount="indefinite"/>
+                        </path>
+                        <path d="M 32 58 Q 12 56 5 72 Q 18 68 32 58 Z" fill="#003d7a" opacity="0.85">
+                            <animateTransform attributeName="transform" type="rotate" from="0 18 65" to="-12 18 65" dur="2.5s" repeatCount="indefinite"/>
+                        </path>
+                        <ellipse cx="50" cy="58" rx="32" ry="6.5" fill="white" opacity="0.95" transform="rotate(-25 50 58)"/>
+                        <ellipse cx="50" cy="70" rx="30" ry="5.8" fill="#e0e0e0" opacity="0.8" transform="rotate(-20 50 70)"/>
+                        <ellipse cx="48" cy="82" rx="28" ry="5" fill="white" opacity="0.9" transform="rotate(-15 48 82)"/>
+                        <path d="M 35 90 Q 27 105 23 113 Q 31 108 35 90 Z" fill="#0057a8"/>
+                        <path d="M 40 94 Q 35 108 33 116 Q 39 112 40 94 Z" fill="#003d7a"/>
+                    </g>
+                </svg>
+                <div class="logo-text">
+                    <div class="logo-title">BROKER DF</div>
+                    <div class="logo-subtitle">Corretora de Seguros</div>
+                </div>
+            </div>
+            <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Abrir menu de navegação">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato" class="nav-cta">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">✨ Sua Segurança em Primeiro Lugar</div>
+                <h1>Proteção <span class="highlight">Premium</span> Para Sua Vida</h1>
+                <p>Soluções em seguros personalizadas com atendimento de excelência. Mais de uma década protegendo o que é importante para você.</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn-primary">Solicitar Cotação <span>→</span></a>
+                    <a href="#servicos" class="btn-secondary">Nossos Serviços <span>↓</span></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-logo-container">
+                    <svg class="hero-logo" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <defs>
+                            <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+                                <feOffset dx="0" dy="10" result="offsetblur"/>
+                                <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+                            </filter>
+                            <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0057a8;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#003d7a;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <g filter="url(#shadow)" transform="translate(50, 30)">
+                            <ellipse cx="100" cy="130" rx="55" ry="70" fill="url(#blueGradient)"/>
+                            <circle cx="135" cy="85" r="38" fill="url(#blueGradient)"/>
+                            <path d="M 165 85 Q 185 85 192 92 Q 185 99 165 99 Z" fill="#FFD700" opacity="0.9"/>
+                            <circle cx="150" cy="80" r="7" fill="white"/>
+                            <circle cx="152" cy="78" r="4" fill="#1a1a1a"/>
+                            <circle cx="153" cy="77" r="2" fill="white" opacity="0.8"/>
+                            <path d="M 55 100 Q 10 60 20 20 Q 35 50 55 100 Z" fill="url(#blueGradient)" opacity="0.95">
+                                <animateTransform attributeName="transform" type="rotate" values="0 40 60; 25 40 60; 0 40 60" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M 60 115 Q 20 110 5 140 Q 30 130 60 115 Z" fill="#003d7a" opacity="0.85">
+                                <animateTransform attributeName="transform" type="rotate" values="0 35 125; -20 35 125; 0 35 125" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M 110 95 Q 140 80 150 70 Q 135 85 110 95 Z" fill="#0057a8" opacity="0.7"/>
+                            <ellipse cx="100" cy="110" rx="60" ry="12" fill="white" opacity="0.95" transform="rotate(-30 100 110)"/>
+                            <ellipse cx="100" cy="135" rx="58" ry="11" fill="#e0e0e0" opacity="0.8" transform="rotate(-25 100 135)"/>
+                            <ellipse cx="98" cy="160" rx="55" ry="10" fill="white" opacity="0.9" transform="rotate(-20 98 160)"/>
+                            <path d="M 70 180 Q 55 210 48 230 Q 62 220 70 180 Z" fill="url(#blueGradient)" opacity="0.9"/>
+                            <path d="M 78 185 Q 68 215 63 235 Q 75 225 78 185 Z" fill="#003d7a" opacity="0.85"/>
+                            <path d="M 86 188 Q 80 218 78 238 Q 88 228 86 188 Z" fill="#0057a8" opacity="0.8"/>
+                            <path d="M 85 120 Q 70 115 60 120" stroke="white" stroke-width="2" fill="none" opacity="0.4"/>
+                            <path d="M 90 140 Q 75 135 65 140" stroke="white" stroke-width="2" fill="none" opacity="0.4"/>
+                        </g>
+                    </svg>
+                    <div class="floating-cards">
+                        <div class="floating-card">
+                            <div class="floating-card-icon">🛡️</div>
+                            <div class="floating-card-title">Proteção Total</div>
+                            <div class="floating-card-value">24/7</div>
+                        </div>
+                        <div class="floating-card">
+                            <div class="floating-card-icon">⭐</div>
+                            <div class="floating-card-title">Satisfação</div>
+                            <div class="floating-card-value">98%</div>
+                        </div>
+                        <div class="floating-card">
+                            <div class="floating-card-icon">👥</div>
+                            <div class="floating-card-title">Clientes Ativos</div>
+                            <div class="floating-card-value">5K+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="section-header">
+            <div class="section-badge">Nossos Serviços</div>
+            <h2 class="section-title">Soluções Completas em Seguros</h2>
+            <p class="section-subtitle">Oferecemos uma ampla gama de produtos para proteger você, sua família e seu patrimônio</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🚗</div>
+                <h3>Seguro Auto</h3>
+                <p>Proteção completa para seu veículo com coberturas personalizadas, assistência 24h e condições especiais.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Seguro Residencial</h3>
+                <p>Segurança total para seu lar contra incêndios, roubos, danos elétricos e muito mais.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">❤️</div>
+                <h3>Seguro de Vida</h3>
+                <p>Proteção financeira e tranquilidade para sua família em todos os momentos da vida.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Seguro Empresarial</h3>
+                <p>Soluções corporativas customizadas para proteger seu negócio e seus colaboradores.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✈️</div>
+                <h3>Seguro Viagem</h3>
+                <p>Viaje com segurança e assistência médica internacional em qualquer destino.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚕️</div>
+                <h3>Planos de Saúde</h3>
+                <p>Acesso aos melhores hospitais e médicos com planos individuais e empresariais.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Anos de Experiência</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5K+</div>
+                <div class="stat-label">Clientes Satisfeitos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Taxa de Satisfação</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Suporte Disponível</div>
+            </div>
+        </div>
+    </div>
+
+    <section id="sobre">
+        <div class="about-content">
+            <div class="about-image">
+                <svg class="about-logo" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0057a8;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#003d7a;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <g transform="translate(50, 30)">
+                        <ellipse cx="100" cy="130" rx="55" ry="70" fill="url(#blueGrad)"/>
+                        <circle cx="135" cy="85" r="38" fill="url(#blueGrad)"/>
+                        <path d="M 165 85 Q 185 85 192 92 Q 185 99 165 99 Z" fill="#FFD700"/>
+                        <circle cx="150" cy="80" r="7" fill="white"/>
+                        <circle cx="152" cy="78" r="4" fill="#1a1a1a"/>
+                        <path d="M 55 100 Q 10 60 20 20 Q 35 50 55 100 Z" fill="url(#blueGrad)" opacity="0.95"/>
+                        <path d="M 60 115 Q 20 110 5 140 Q 30 130 60 115 Z" fill="#003d7a" opacity="0.85"/>
+                        <ellipse cx="100" cy="110" rx="60" ry="12" fill="white" opacity="0.95" transform="rotate(-30 100 110)"/>
+                        <ellipse cx="100" cy="135" rx="58" ry="11" fill="#e0e0e0" opacity="0.8" transform="rotate(-25 100 135)"/>
+                        <ellipse cx="98" cy="160" rx="55" ry="10" fill="white" opacity="0.9" transform="rotate(-20 98 160)"/>
+                        <path d="M 70 180 Q 55 210 48 230 Q 62 220 70 180 Z" fill="url(#blueGrad)"/>
+                        <path d="M 78 185 Q 68 215 63 235 Q 75 225 78 185 Z" fill="#003d7a"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="about-text">
+                <div class="section-badge">Sobre Nós</div>
+                <h2>Excelência em Corretagem de Seguros</h2>
+                <p>A <strong>Broker DF</strong> é referência em soluções de seguros no Distrito Federal. Com mais de 15 anos de experiência, construímos nossa reputação através da confiança, transparência e compromisso com a satisfação dos nossos clientes.</p>
+                <p>Trabalhamos com as principais seguradoras do mercado para oferecer as melhores condições e coberturas. Nossa equipe de especialistas está sempre pronta para orientar você na escolha do seguro ideal para suas necessidades.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <h4>Atendimento Premium</h4>
+                            <p>Consultoria especializada e personalizada</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <h4>Seguradoras Líderes</h4>
+                            <p>Parceria com as melhores do Brasil</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <h4>Agilidade</h4>
+                            <p>Processos rápidos e descomplicados</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <h4>Suporte Total</h4>
+                            <p>Assistência em todas as etapas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="section-header">
+            <div class="section-badge">Fale Conosco</div>
+            <h2 class="section-title">Vamos Conversar?</h2>
+            <p class="section-subtitle">Entre em contato e descubra como podemos proteger o que é importante para você</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info-section">
+                <h2>Estamos Aqui Para Ajudar</h2>
+                <p>Nossa equipe está pronta para atender você e encontrar as melhores soluções em seguros.</p>
+                <div class="contact-items">
+                    <a href="tel:+5561984275522" class="contact-item">
+                        <div class="contact-item-icon">📞</div>
+                        <div class="contact-item-text">
+                            <strong>Telefone</strong>
+                            (61) 98427-5522
+                        </div>
+                    </a>
+                    <a href="https://wa.me/5561984275522?text=Olá! Gostaria de solicitar uma cotação de seguro." class="contact-item" target="_blank" rel="noopener">
+                        <div class="contact-item-icon">📱</div>
+                        <div class="contact-item-text">
+                            <strong>WhatsApp</strong>
+                            (61) 98427-5522
+                        </div>
+                    </a>
+                    <a href="mailto:segurosbrokerdf@gmail.com" class="contact-item">
+                        <div class="contact-item-icon">📧</div>
+                        <div class="contact-item-text">
+                            <strong>E-mail</strong>
+                            segurosbrokerdf@gmail.com
+                        </div>
+                    </a>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <div class="contact-item-text">
+                            <strong>Endereço</strong>
+                            St. A Norte CNA 1 sala 104 - Taguatinga, Brasília - DF, 72110-015
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">⏰</div>
+                        <div class="contact-item-text">
+                            <strong>Horário de Atendimento</strong>
+                            Segunda a Sexta: 9h às 18h
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <form class="contact-form" onsubmit="enviarFormulario(event)">
+                    <div class="form-group">
+                        <label>Nome Completo</label>
+                        <input type="text" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Telefone</label>
+                        <input type="tel" placeholder="(00) 00000-0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Tipo de Seguro</label>
+                        <input type="text" placeholder="Ex: Auto, Vida, Residencial..." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mensagem</label>
+                        <textarea rows="4" placeholder="Como podemos ajudar você?" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>BROKER DF</h3>
+                <p>Sua corretora de seguros de confiança em Brasília. Protegendo o que é importante para você há mais de 15 anos.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul class="footer-links">
+                    <li><a href="#servicos">Seguro Auto</a></li>
+                    <li><a href="#servicos">Seguro Residencial</a></li>
+                    <li><a href="#servicos">Seguro de Vida</a></li>
+                    <li><a href="#servicos">Seguro Empresarial</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Empresa</h4>
+                <ul class="footer-links">
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Suporte</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Broker DF - Corretora de Seguros. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5561984275522?text=Olá! Gostaria de solicitar uma cotação." class="whatsapp-float" target="_blank" rel="noopener" title="Fale conosco no WhatsApp">
+        <svg width="60" height="60" viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="30" r="28" fill="#25D366"/>
+            <path d="M30 15c-8.284 0-15 6.716-15 15 0 2.872.817 5.553 2.23 7.844l-2.128 6.338 6.546-2.091A14.943 14.943 0 0030 45c8.284 0 15-6.716 15-15s-6.716-15-15-15zm7.5 20.625c-.319.903-1.591 1.66-2.625 1.875-.7.144-1.612.262-4.678-.997-3.925-1.612-6.469-5.597-6.656-5.859-.188-.263-1.547-2.053-1.547-3.919s.978-2.784 1.322-3.162c.344-.378.75-.472 1.003-.472s.506.003.728.013c.234.009.547-.09.856.653.319.769 1.087 2.634 1.181 2.828.094.194.159.422.034.684-.125.263-.188.422-.375.65-.188.225-.394.506-.563.678-.188.194-.384.403-.166.788.219.378.972 1.603 2.091 2.597 1.44 1.284 2.653 1.688 3.028 1.875.375.188.597.159.819-.094.219-.253.938-1.087 1.191-1.462.253-.375.5-.313.844-.188.344.125 2.184 1.031 2.559 1.219.375.188.625.281.719.438.094.156.094.903-.225 1.806z" fill="white"/>
+        </svg>
+    </a>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        function enviarFormulario(event) {
+            event.preventDefault();
+            const nome = event.target[0].value;
+            const email = event.target[1].value;
+            const telefone = event.target[2].value;
+            const tipoSeguro = event.target[3].value;
+            const mensagem = event.target[4].value;
+            
+            const assunto = encodeURIComponent(`Contato do Site - ${tipoSeguro}`);
+            const corpo = encodeURIComponent(`Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nTipo de Seguro: ${tipoSeguro}\n\nMensagem:\n${mensagem}`);
+            
+            window.location.href = `mailto:segurosbrokerdf@gmail.com?subject=${assunto}&body=${corpo}`;
+            alert('✅ Obrigado pelo contato! Estamos redirecionando você para o envio do e-mail.');
+            event.target.reset();
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.getElementById('navLinks').classList.remove('active');
+                }
+            });
+        });
+
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' };
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .stat-item, .feature-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+
+   
+
+
+           
