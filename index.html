@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO ESSENCIAL -->
-  <title>Plano de Saúde em Brasília | Broker DF Corretora de Seguros</title>
-  <meta name="description" content="Plano de saúde em Brasília (DF) com contratação, portabilidade sem carência e estudo para reduzir custos sem perder benefícios. Fale com a Broker DF e receba uma análise gratuita." />
-  <meta name="keywords" content="seguro brasília, corretora seguros df, seguro auto, seguro residencial, seguro vida, plano de saúde brasília, corretora plano de saúde df" />
-  <meta name="author" content="Broker DF" />
-  <link rel="canonical" href="https://brokerdf.com.br/" />
-  <meta name="robots" content="index,follow" />
+  <!-- SEO PRINCIPAL (Plano de Saúde + Geral / Sem limitar Brasília) -->
+  <title>Plano de Saúde | Broker DF Corretora de Seguros, Seguros e Consórcios</title>
+  <meta name="description" content="Plano de saúde com contratação, portabilidade sem carência e estudo para reduzir custos sem perder benefícios. A Broker DF também oferece seguros e consórcios com atendimento personalizado e análise gratuita.">
+  <link rel="canonical" href="https://brokerdf.com.br/">
+  <meta name="robots" content="index,follow">
 
-  <!-- Open Graph (WhatsApp/Instagram/Facebook) -->
-  <meta property="og:title" content="Plano de Saúde em Brasília | Broker DF" />
-  <meta property="og:description" content="Portabilidade sem carência e estudo para reduzir o custo do seu plano sem perder benefícios. Análise gratuita." />
-  <meta property="og:url" content="https://brokerdf.com.br/" />
-  <meta property="og:type" content="website" />
+  <!-- Open Graph (prévia em WhatsApp/Instagram/Facebook) -->
+  <meta property="og:title" content="Plano de Saúde | Broker DF Corretora de Seguros">
+  <meta property="og:description" content="Contratação e portabilidade sem carência. Estudo para reduzir custos sem perder benefícios. Também trabalhamos com seguros e consórcios.">
+  <meta property="og:url" content="https://brokerdf.com.br/">
+  <meta property="og:type" content="website">
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Plano de Saúde | Broker DF">
+  <meta name="twitter:description" content="Plano de saúde, seguros e consórcios com atendimento especializado.">
 
   <!-- Dados estruturados (Google) -->
   <script type="application/ld+json">
@@ -36,15 +36,15 @@
       "addressRegion": "DF",
       "addressCountry": "BR"
     },
-    "areaServed": "Distrito Federal",
-    "description": "Corretora especializada em plano de saúde: contratação, portabilidade sem carência e redução de custos sem perder benefícios."
+    "areaServed": "Brasil",
+    "description": "Corretora especializada em plano de saúde, seguros e consórcios. Atuação em contratação, portabilidade sem carência e redução de custos sem perder benefícios."
   }
   </script>
 
   <!-- Google Fonts otimizadas -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -66,7 +66,6 @@
       overflow-x: hidden;
     }
 
-    /* ===== Header / Nav ===== */
     header {
       position: fixed;
       width: 100%;
@@ -108,11 +107,7 @@
 
     .logo-image:hover { transform: scale(1.05) rotate(5deg); }
 
-    .logo-text {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
-    }
+    .logo-text { display: flex; flex-direction: column; gap: 0.2rem; }
 
     .logo-title {
       font-size: 1.9rem;
@@ -192,7 +187,6 @@
       cursor: pointer;
     }
 
-    /* ===== Hero ===== */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -315,14 +309,7 @@
     }
 
     .hero-visual { position: relative; animation: fadeInRight 1s ease; }
-
-    .hero-logo-container {
-      position: relative;
-      width: 100%;
-      max-width: 450px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
+    .hero-logo-container { position: relative; width: 100%; max-width: 450px; margin: 0 auto; padding: 2rem; }
 
     .hero-logo {
       width: 100%;
@@ -361,7 +348,6 @@
     .floating-card-title { font-size: 0.9rem; font-weight: 600; color: var(--primary-blue); margin-bottom: 0.3rem; }
     .floating-card-value { font-size: 1.5rem; font-weight: 800; color: var(--text-dark); }
 
-    /* ===== Sections ===== */
     #servicos { padding: 120px 3rem; background: white; position: relative; }
 
     .section-header { text-align: center; margin-bottom: 4rem; animation: fadeInUp 0.8s ease; }
@@ -411,8 +397,10 @@
     .service-card::before {
       content: '';
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
       opacity: 0;
       transition: opacity 0.4s ease;
@@ -457,36 +445,6 @@
     .service-card p { color: var(--text-light); line-height: 1.8; transition: color 0.4s ease; }
     .service-card:hover p { color: rgba(255, 255, 255, 0.9); }
 
-    .stats-section {
-      padding: 80px 3rem;
-      background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
-      color: white;
-    }
-
-    .stats-grid {
-      max-width: 1400px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 3rem;
-      text-align: center;
-    }
-
-    .stat-item { animation: fadeInUp 0.8s ease; }
-
-    .stat-number {
-      font-size: 4rem;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-      background: linear-gradient(135deg, #FFD700, #FFA500);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .stat-label { font-size: 1.1rem; opacity: 0.9; font-weight: 300; }
-
-    /* ===== About ===== */
     #sobre {
       padding: 120px 3rem;
       background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -525,7 +483,10 @@
       animation: pulse 4s ease-in-out infinite;
     }
 
-    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
 
     .about-text h2 {
       font-size: 2.8rem;
@@ -567,74 +528,90 @@
     .feature-text h4 { font-weight: 700; color: var(--text-dark); margin-bottom: 0.3rem; }
     .feature-text p { font-size: 0.9rem; color: var(--text-light); margin: 0; }
 
-    /* ===== CEO section (separada e segura) ===== */
-    #ceo {
-      padding: 0 3rem 120px;
-      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    .stats-section {
+      padding: 80px 3rem;
+      background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+      color: white;
     }
 
-    .ceo-wrap {
+    .stats-grid {
       max-width: 1400px;
       margin: 0 auto;
-      background: rgba(255,255,255,0.75);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(0,0,0,0.06);
-      border-radius: 28px;
-      padding: 36px;
-      box-shadow: 0 18px 55px rgba(0,0,0,0.08);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      text-align: center;
     }
 
+    .stat-item { animation: fadeInUp 0.8s ease; }
+
+    .stat-number {
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #FFD700, #FFA500);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .stat-label { font-size: 1.1rem; opacity: 0.9; font-weight: 300; }
+
+    /* ===== CEO (premium + responsivo) ===== */
     .ceo-box {
+      margin: 60px auto 0;
+      max-width: 1400px;
+      padding: 28px;
+      background: rgba(255,255,255,0.75);
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      backdrop-filter: blur(10px);
       display: flex;
       align-items: flex-start;
-      gap: 24px;
+      gap: 18px;
     }
 
-    .ceo-photo {
+    .ceo-photo{
       width: 140px;
       height: 140px;
       max-width: 140px;
       border-radius: 50%;
       object-fit: cover;
       flex-shrink: 0;
-      border: 3px solid rgba(255,255,255,0.95);
-      box-shadow: 0 10px 26px rgba(0,0,0,.14);
     }
 
     .ceo-name {
       font-size: 18px;
-      font-weight: 700;
-      margin-top: 2px;
+      font-weight: 600;
+      margin-top: 6px;
       margin-bottom: 4px;
       color: #111;
-      letter-spacing: 0.2px;
     }
 
     .ceo-role {
       font-size: 14.5px;
       font-weight: 500;
       color: #555;
-      margin-bottom: 14px;
-    }
-
-    .ceo-title {
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 14px;
-      color: #111;
-      letter-spacing: -0.3px;
+      margin-bottom: 10px;
     }
 
     .ceo-text {
-      line-height: 1.85;
+      margin-top: 8px;
+      line-height: 1.8;
       max-width: 920px;
       font-size: 16.5px;
       color: #333;
     }
 
-    .ceo-text p { margin-bottom: 16px; }
+    .ceo-text p { margin-bottom: 18px; }
 
-    /* ===== Contact ===== */
+    .ceo-title{
+      font-size: 1.25rem;
+      margin: 10px 0 12px;
+      color: #111;
+    }
+
     #contato { padding: 120px 3rem; background: white; }
 
     .contact-container {
@@ -692,7 +669,6 @@
     }
 
     .contact-item:hover .contact-item-icon { transform: scale(1.1); }
-
     .contact-item-text strong { display: block; font-weight: 700; margin-bottom: 0.3rem; }
 
     .contact-form-container {
@@ -749,7 +725,6 @@
       box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
     }
 
-    /* ===== Footer ===== */
     footer {
       background: linear-gradient(135deg, #001f3f 0%, #003d7a 100%);
       color: white;
@@ -778,12 +753,7 @@
 
     .footer-section h4 { font-size: 1.2rem; margin-bottom: 1.5rem; font-weight: 700; }
 
-    .footer-links {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
 
     .footer-links a {
       color: rgba(255, 255, 255, 0.8);
@@ -814,17 +784,12 @@
 
     .whatsapp-float:hover { transform: scale(1.1); }
 
-    /* Animations */
     @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes fadeInLeft { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
     @keyframes fadeInRight { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
 
-    /* Responsive */
     @media (max-width: 1024px) {
-      .hero-content,
-      .about-content,
-      .contact-container { grid-template-columns: 1fr; gap: 3rem; }
-
+      .hero-content, .about-content, .contact-container { grid-template-columns: 1fr; gap: 3rem; }
       .hero h1 { font-size: 3rem; }
       .floating-cards { display: none; }
     }
@@ -855,14 +820,12 @@
       .section-title { font-size: 2.2rem; }
       .services-grid { grid-template-columns: 1fr; }
       .about-features { grid-template-columns: 1fr; }
-
       .footer-content { grid-template-columns: 1fr; gap: 2rem; }
       .stats-grid { grid-template-columns: 1fr 1fr; }
 
-      /* CEO responsivo */
-      .ceo-wrap { padding: 22px; border-radius: 22px; }
-      .ceo-box { flex-direction: column; align-items: center; text-align: center; }
-      .ceo-text { text-align: left; }
+      /* CEO mobile */
+      .ceo-box { flex-direction: column; align-items: flex-start; padding: 22px; }
+      .ceo-photo { width: 120px; height: 120px; }
     }
   </style>
 </head>
@@ -977,6 +940,7 @@
               <div class="floating-card-value">5K+</div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -995,31 +959,26 @@
         <h3>Seguro Auto</h3>
         <p>Proteção completa para seu veículo com coberturas personalizadas, assistência 24h e condições especiais.</p>
       </div>
-
       <div class="service-card">
         <div class="service-icon">🏠</div>
         <h3>Seguro Residencial</h3>
         <p>Segurança total para seu lar contra incêndios, roubos, danos elétricos e muito mais.</p>
       </div>
-
       <div class="service-card">
         <div class="service-icon">❤️</div>
         <h3>Seguro de Vida</h3>
         <p>Proteção financeira e tranquilidade para sua família em todos os momentos da vida.</p>
       </div>
-
       <div class="service-card">
         <div class="service-icon">🏢</div>
         <h3>Seguro Empresarial</h3>
         <p>Soluções corporativas customizadas para proteger seu negócio e seus colaboradores.</p>
       </div>
-
       <div class="service-card">
         <div class="service-icon">✈️</div>
         <h3>Seguro Viagem</h3>
         <p>Viaje com segurança e assistência médica internacional em qualquer destino.</p>
       </div>
-
       <div class="service-card">
         <div class="service-icon">⚕️</div>
         <h3>Planos de Saúde</h3>
@@ -1079,8 +1038,8 @@
       <div class="about-text">
         <div class="section-badge">Sobre Nós</div>
         <h2>Excelência em Corretagem de Seguros</h2>
-        <p>A <strong>Broker DF</strong> é referência em soluções de seguros no Distrito Federal. Com mais de 15 anos de experiência, construímos nossa reputação através da confiança, transparência e compromisso com a satisfação dos nossos clientes.</p>
-        <p>Trabalhamos com as principais seguradoras do mercado para oferecer as melhores condições e coberturas. Nossa equipe de especialistas está sempre pronta para orientar você na escolha do seguro ideal para suas necessidades.</p>
+        <p>A <strong>Broker DF</strong> é referência em soluções de seguros. Construímos nossa reputação através da confiança, transparência e compromisso com a satisfação dos nossos clientes.</p>
+        <p>Trabalhamos com as principais seguradoras do mercado para oferecer as melhores condições e coberturas. Nossa equipe está pronta para orientar você na escolha do seguro ideal.</p>
 
         <div class="about-features">
           <div class="feature-item">
@@ -1114,33 +1073,27 @@
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Seção do CEO (fora do #sobre, para não quebrar o grid) -->
-  <section id="ceo" aria-label="Mensagem do CEO">
-    <div class="ceo-wrap">
-      <div class="ceo-box">
-        <img src="ceo-brokerdf.jpg" alt="CEO da Broker DF Corretora de Seguros" class="ceo-photo" />
+    <!-- CEO -->
+    <div class="ceo-box">
+      <img src="ceo-brokerdf.jpg" alt="CEO da Broker DF Corretora de Seguros" class="ceo-photo" loading="lazy">
+      <div>
+        <div class="ceo-name">ARI MIRANDA</div>
+        <div class="ceo-role">CEO | Broker DF Corretora de Seguros</div>
+        <div class="ceo-text">
+          <h3 class="ceo-title">Uma história construída com confiança e cuidado</h3>
 
-        <div>
-          <div class="ceo-name">ARI MIRANDA</div>
-          <div class="ceo-role">CEO | Broker DF Corretora de Seguros</div>
+          <p>Atuando como corretor de seguros desde 1987, com registro ativo na SUSEP, construí minha trajetória com base em valores sólidos, relacionamento próximo e compromisso genuíno com cada cliente. Sou sócio fundador da Broker DF Corretora de Seguros, empresa que nasceu nessa mesma época e cresceu sustentada pela confiança e credibilidade conquistadas ao longo dos anos.</p>
 
-          <div class="ceo-text">
-            <h3 class="ceo-title">Uma história construída com confiança e cuidado</h3>
+          <p>Minha atuação abrange as áreas de seguros e consórcios, sempre com foco em oferecer soluções seguras, transparentes e adequadas à realidade de cada pessoa e família. Ao longo de toda essa caminhada, tenho orgulho em afirmar que não possuo nenhum registro de reclamação por parte de clientes, reflexo de um trabalho sério, ético e feito com responsabilidade.</p>
 
-            <p>Atuando como corretor de seguros desde 1987, com registro ativo na SUSEP, construí minha trajetória com base em valores sólidos, relacionamento próximo e compromisso genuíno com cada cliente. Sou sócio fundador da Broker DF Corretora de Seguros, empresa que nasceu nessa mesma época e cresceu sustentada pela confiança e credibilidade conquistadas ao longo dos anos.</p>
+          <p>Mais do que clientes, construí relações que atravessam gerações. Famílias que confiam, indicam e permanecem, porque sabem que aqui seu patrimônio é tratado com o cuidado que merece.</p>
 
-            <p>Minha atuação abrange as áreas de seguros e consórcios, sempre com foco em oferecer soluções seguras, transparentes e adequadas à realidade de cada pessoa e família. Ao longo de toda essa caminhada, tenho orgulho em afirmar que não possuo nenhum registro de reclamação por parte de clientes, reflexo de um trabalho sério, ético e feito com responsabilidade.</p>
+          <p>Meu propósito é claro: proteger o que é mais importante. Para isso, busco entregar excelência no atendimento, aliando as melhores coberturas ao melhor custo-benefício, sempre com orientação honesta e personalizada.</p>
 
-            <p>Mais do que clientes, construí relações que atravessam gerações. Famílias que confiam, indicam e permanecem, porque sabem que aqui seu patrimônio é tratado com o cuidado que merece.</p>
+          <p>Ofereço prestação de serviços voltada à segurança do patrimônio pessoal e familiar, com atenção aos detalhes, proximidade no relacionamento e compromisso contínuo com a tranquilidade de quem confia em meu trabalho.</p>
 
-            <p>Meu propósito é claro: proteger o que é mais importante. Para isso, busco entregar excelência no atendimento, aliando as melhores coberturas ao melhor custo-benefício, sempre com orientação honesta e personalizada.</p>
-
-            <p>Ofereço prestação de serviços voltada à segurança do patrimônio pessoal e familiar, com atenção aos detalhes, proximidade no relacionamento e compromisso contínuo com a tranquilidade de quem confia em meu trabalho.</p>
-
-            <p><em>Cuidar do seu patrimônio é mais do que um serviço — é uma missão construída com dedicação, respeito e confiança ao longo de décadas.</em></p>
-          </div>
+          <p><em>Cuidar do seu patrimônio é mais do que um serviço — é uma missão construída com dedicação, respeito e confiança ao longo de décadas.</em></p>
         </div>
       </div>
     </div>
@@ -1161,7 +1114,7 @@
             </div>
           </a>
 
-          <a href="https://wa.me/5561984275522?text=Olá!%20Gostaria%20de%20solicitar%20uma%20cotação%20de%20seguro." class="contact-item" target="_blank" rel="noopener">
+          <a href="https://wa.me/5561984275522?text=Olá!%20Gostaria%20de%20solicitar%20uma%20cotação%20de%20plano%20de%20saúde." class="contact-item" target="_blank" rel="noopener">
             <div class="contact-item-icon">📱</div>
             <div class="contact-item-text">
               <strong>WhatsApp</strong>
@@ -1199,29 +1152,24 @@
         <form class="contact-form" onsubmit="enviarFormulario(event)">
           <div class="form-group">
             <label>Nome Completo</label>
-            <input type="text" placeholder="Digite seu nome" required />
+            <input type="text" placeholder="Digite seu nome" required>
           </div>
-
           <div class="form-group">
             <label>E-mail</label>
-            <input type="email" placeholder="seu@email.com" required />
+            <input type="email" placeholder="seu@email.com" required>
           </div>
-
           <div class="form-group">
             <label>Telefone</label>
-            <input type="tel" placeholder="(00) 00000-0000" required />
+            <input type="tel" placeholder="(00) 00000-0000" required>
           </div>
-
           <div class="form-group">
             <label>Tipo de Seguro</label>
-            <input type="text" placeholder="Ex: Auto, Vida, Residencial..." required />
+            <input type="text" placeholder="Ex: Plano de Saúde, Vida, Auto..." required>
           </div>
-
           <div class="form-group">
             <label>Mensagem</label>
             <textarea rows="4" placeholder="Como podemos ajudar você?" required></textarea>
           </div>
-
           <button type="submit" class="form-submit">Enviar Mensagem</button>
         </form>
       </div>
@@ -1232,7 +1180,7 @@
     <div class="footer-content">
       <div class="footer-about">
         <h3>BROKER DF</h3>
-        <p>Sua corretora de seguros de confiança em Brasília. Protegendo o que é importante para você há mais de 15 anos.</p>
+        <p>Sua corretora de seguros de confiança. Plano de saúde, seguros e consórcios com atendimento personalizado.</p>
       </div>
 
       <div class="footer-section">
@@ -1298,9 +1246,7 @@
       const mensagem = event.target[4].value;
 
       const assunto = encodeURIComponent(`Contato do Site - ${tipoSeguro}`);
-      const corpo = encodeURIComponent(
-        `Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nTipo de Seguro: ${tipoSeguro}\n\nMensagem:\n${mensagem}`
-      );
+      const corpo = encodeURIComponent(`Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nTipo de Seguro: ${tipoSeguro}\n\nMensagem:\n${mensagem}`);
 
       window.location.href = `mailto:segurosbrokerdf@gmail.com?subject=${assunto}&body=${corpo}`;
       alert('✅ Obrigado pelo contato! Estamos redirecionando você para o envio do e-mail.');
