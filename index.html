@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- ✅ GA4 (Google Analytics) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Troque G-XXXXXXXXXX pelo seu ID do GA4
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -1518,6 +1528,14 @@ www.brokerdf.com.br
 
     // Link do WhatsApp com leve urgência + pergunta
     const wa = `https://wa.me/5561984275522?text=${encodeURIComponent(texto)}`;
+    // ✅ Evento: Lead (envio do formulário)
+if (typeof gtag === 'function') {
+  gtag('event', 'generate_lead', {
+    method: 'formulario',
+    interesse: interesse || 'nao_informado',
+    urgencia: urgencia || 'nao_informado'
+  });
+} 
     window.open(wa, '_blank', 'noopener');
 
     alert('✅ Perfeito! Abrimos o WhatsApp com sua solicitação pronta para envio.');
