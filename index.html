@@ -1557,6 +1557,22 @@ if (typeof gtag === 'function') {
       });
     }
   });
+    // ✅ Evento: Clique no WhatsApp flutuante
+document.addEventListener('DOMContentLoaded', () => {
+  const wpp = document.querySelector('.whatsapp-float');
+
+  if (!wpp) return;
+
+  wpp.addEventListener('click', () => {
+
+    if (typeof gtag === 'function') {
+      gtag('event', 'generate_lead', {
+        method: 'whatsapp_floating'
+      });
+    }
+
+  });
+});
 </script>
 </body>
 </html>
