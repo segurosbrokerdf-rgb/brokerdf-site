@@ -17,6 +17,19 @@ A ferramenta de busca usada roda nos EUA e não é o Google Brasil. Os concorren
 | starcorretoradeseguros.com.br (página de vida) | Vida | Seguro de Vida em Brasília (DF) | Igual ao title | Article, BreadcrumbList, Organization | 826 | Não | Por produto e por público |
 | **brokerdf.com.br (antes)** | Ambos | Plano de Saúde + marca, sem local | Sem local e sem vida | InsuranceAgency | 1048 | Não | **Nenhuma** |
 
+## Resultado real do Google (print do Bruno, 2026-11-03)
+Busca: "corretora plano de saúde Brasília". O Broker DF não aparece na parte visível do print.
+
+| Posição | Quem | Sinais visíveis |
+|---|---|---|
+| Mapa 1 | Corretora de Planos de Saúde em Brasília | 5,0 com 427 avaliações |
+| Mapa 2 | LS Corretora Planos de Saúde | 5,0 com 251 avaliações |
+| Mapa 3 | Vilma Lins Planos de saúde | 5,0 com 69 avaliações |
+| Orgânico 1 | Star Corretora (`/planos-de-saude-...`) | Página dedicada, title "Planos de Saúde Brasília (DF)" |
+| Orgânico 2 | Medlife Seguros (home) | Title "Planos de Saúde em Brasília-DF" |
+
+O mapa vem antes dos resultados orgânicos, e as avaliações se destacam nele. O Perfil da Empresa e a coleta de avaliações reais passam a ser prioridade. A busca de seguro de vida ainda não foi conferida.
+
 ## Lacunas encontradas
 1. Uma única página tenta atender todas as buscas.
 2. Title, description e H1 não citam Brasília/DF nem seguro de vida.
@@ -45,4 +58,4 @@ A ferramenta de busca usada roda nos EUA e não é o Google Brasil. Os concorren
 - Perfil da Empresa no Google: provavelmente o maior fator nas buscas locais.
 - ID real do GA4 (hoje é o marcador `G-XXXXXXXXXX`, sem medição) e Search Console.
 - Número de registro SUSEP, seguradoras de vida parceiras e horário de atendimento.
-- Confirmação dos números da home: 98% de satisfação, 5K+ clientes, 24/7.
+- Definir se o site atende só o DF ou também outras regiões.

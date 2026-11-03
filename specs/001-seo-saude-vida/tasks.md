@@ -11,7 +11,10 @@
 - [x] T009 Adicionar `robots.txt` e `sitemap.xml`
 - [x] T010 Comprimir `ceo-brokerdf.jpg`
 - [x] T011 Remover `CENAME`
-- [ ] T012 Bruno: confirmar top 3 real no Google, em aba anônima no DF
+- [x] T012a Top real no Google para plano de saúde (print do Bruno)
+- [ ] T012b Bruno: enviar o print da busca de seguro de vida
 - [ ] T013 Bruno: enviar ID do GA4, acesso ao Search Console, SUSEP, seguradoras e horário
-- [ ] T014 Bruno: confirmar ou retirar 98%, 5K+ e 24/7
+- [x] T014 Bruno confirmou 98%, 5K+ e 24/7 como verdadeiros (corretora existe desde 1987)
+- [x] T016 Bruno revisou os textos
+- [ ] T017 Bruno: decidir foco só no DF ou também outras regiões
 - [ ] T015 Após o merge: executar `indexacao.md`
