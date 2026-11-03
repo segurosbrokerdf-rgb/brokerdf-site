@@ -30,6 +30,11 @@ Busca: "corretora plano de saúde Brasília". O Broker DF não aparece na parte 
 
 O mapa vem antes dos resultados orgânicos, e as avaliações se destacam nele. O Perfil da Empresa e a coleta de avaliações reais passam a ser prioridade. A busca de seguro de vida ainda não foi conferida.
 
+Busca: "corretora seguro de vida Brasília" (print de 03/11). Mapa: Corretora Libre (390 avaliações), RGontijo (75), Corretora Amor à Vida (1,1 mil). Orgânico: LDA Seguros e Porto Seguro. O Broker DF não aparece na parte visível. Libre e RGontijo exibem "Serviço: Seguro de Vida", então vale cadastrar esse serviço no Perfil da Empresa.
+
+## Decisão de abrangência (Bruno, 2026-11-03)
+Sem limite geográfico: o site atende o Brasil, com destaque para Brasília e o DF. As duas páginas novas continuam voltadas às buscas locais. Corretora ativa desde 1987.
+
 ## Lacunas encontradas
 1. Uma única página tenta atender todas as buscas.
 2. Title, description e H1 não citam Brasília/DF nem seguro de vida.
