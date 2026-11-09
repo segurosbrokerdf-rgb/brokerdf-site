@@ -8,7 +8,7 @@ Baseado no que já foi feito na Amplixa. Executar depois do merge, pois as pági
 3. **Pedir indexação:** em *Inspeção de URL*, testar e solicitar a home e as duas páginas novas.
 4. **Bing Webmaster Tools:** importar a propriedade do Search Console e conferir o sitemap.
 5. **Perfil da Empresa no Google:** criar ou revisar, com nome, endereço e telefone iguais aos do site. Depois da verificação, ligar o perfil no schema do site (`sameAs` e `hasMap`).
-6. **GA4:** feito em 09/11/2026 (branch `002-ga4-id`). ID de medição `G-V0QZN9HMV8`, fluxo da Web 160305398621, em todas as páginas. Google Tag Manager `GTM-MNNHV7PD` (código oficial, com noscript) também em todas as páginas. Se o contêiner do GTM ganhar uma tag do GA4 com o mesmo ID, remover o gtag direto para não contar visitas em dobro. Falta: vincular ao Google Ads da Broker DF (conta sob a MCC da Amplixa 167-076-0025) e marcar `generate_lead` como evento principal depois do primeiro disparo.
+6. **GA4:** feito em 09/11/2026 (branch `002-ga4-id`). ID de medição `G-V0QZN9HMV8`, fluxo da Web 160305398621. Instalado em todas as páginas pela tag do Google `GTM-MNNHV7PD`, gerada pelo próprio Google Analytics (código exato do GA4; o contêiner já envia para `G-V0QZN9HMV8`, conferido no gtm.js em 09/11). Não há conta no tagmanager.google.com: a tag é gerida pelo GA4. Não instalar o gtag `G-...` direto junto, pois contaria visitas em dobro. Falta: vincular ao Google Ads da Broker DF (conta sob a MCC da Amplixa 167-076-0025) e marcar `generate_lead` como evento principal depois do primeiro disparo.
 
 ## Primeiras semanas
 - Conferir em *Páginas* se as 3 URLs foram indexadas e se a versão canônica escolhida pelo Google é a `www`. O prazo pode variar de dias a semanas.
