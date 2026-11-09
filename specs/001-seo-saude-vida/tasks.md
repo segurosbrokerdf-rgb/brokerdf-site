@@ -13,7 +13,7 @@
 - [x] T011 Remover `CENAME`
 - [x] T012a Top real no Google para plano de saúde (print do Bruno)
 - [x] T012b Top real no Google para seguro de vida (print do Bruno)
-- [ ] T013 Bruno: enviar ID do GA4, acesso ao Search Console, SUSEP, seguradoras e horário
+- [ ] T013 Bruno: enviar ID do GA4, acesso ao Search Console, SUSEP, seguradoras e horário (GA4 recebido em 09/11: `G-V0QZN9HMV8`, aplicado no `index.html`)
 - [x] T014 Bruno confirmou 98%, 5K+ e 24/7 como verdadeiros (corretora existe desde 1987)
 - [x] T016 Bruno revisou os textos
 - [x] T017 Sem limite geográfico e inclusão de "desde 1987"
