@@ -1,6 +1,6 @@
 # Spec 002: medição com Google Analytics 4
 
-Status: em revisão (branch `002-ga4-id`, PR #2 em rascunho). Trabalho de 2026-11-09.
+Status: publicada em 2026-11-12 (PR #2, merge `f809e76`). Trabalho de 2026-11-09.
 
 ## Contexto
 O site tinha só o marcador `G-XXXXXXXXXX`, então nenhuma visita era medida.
@@ -18,6 +18,14 @@ As 3 páginas carregam **só** a tag `GTM-MNNHV7PD`. Não somar o gtag `G-V0QZN9
 2. `14d979c` adiciona a tag e o GA4 em todas as páginas.
 3. `e435224` deixa só a tag do Google, sem duplicar.
 
+## Incidente: GA4 sem dados por 3 dias
+Em 2026-11-12 o GA4 avisou "A coleta de dados não está ativa no seu site". Causa: o PR #2 ficou em rascunho de 09/11 a 12/11 e o site no ar ainda tinha o marcador `G-XXXXXXXXXX`. Lição: tag pronta só mede depois do merge; conferir o site publicado, não a branch.
+
+## Verificação após o merge (2026-11-12)
+- As 3 páginas publicadas têm a tag `GTM-MNNHV7PD` logo após o `<head>`, igual à fornecida pelo GA4.
+- Nenhuma página tem mais `G-XXXXXXXXXX` nem um segundo gtag.
+- O WhatsApp (61) 99983-5948 continua em todas as páginas (sem regressão da spec 003).
+- `gtm.js?id=GTM-MNNHV7PD` responde 200.
+
 ## Pendências
-- Merge do PR #2, com aprovação. A branch foi criada antes da troca do WhatsApp (spec 003): conferir que o número antigo não volta.
-- Depois do merge: confirmar visitas em tempo real no GA4.
+- Bruno: usar **Testar** nas instruções da tag e conferir **Relatórios → Tempo real**. O aviso amarelo pode levar até 48 horas para sumir.
