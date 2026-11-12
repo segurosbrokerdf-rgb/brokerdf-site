@@ -16,13 +16,12 @@ Site estático de https://www.brokerdf.com.br/, hospedado no GitHub Pages a part
 | 002 | GA4 pela tag do Google `GTM-MNNHV7PD` (envia para `G-V0QZN9HMV8`) | Publicada em 2026-11-12 (PR #2) |
 | 003 | WhatsApp trocado para (61) 99983-5948 | Publicada em 2026-11-09 (PR #3) |
 | docs | README e specs 002/003 (PR #4); atualização após publicar o GA4 (PR #5) | Publicadas em 2026-11-12 |
+| 006 | Largura no celular, contraste do botão de WhatsApp, foto em WebP, horário nos dados estruturados | Em revisão (PR #6) |
 
 ## Pendências
 - Confirmar visitas no Tempo real do GA4 (tag publicada em 2026-11-12).
-- Corrigir a largura da home no celular.
-- Converter `ceo-brokerdf.jpg` para WebP e reduzir o tamanho.
 - Search Console: propriedade de domínio com TXT no registro.br, sitemap e pedido de indexação (`specs/001-seo-saude-vida/indexacao.md`).
 - Perfil da Empresa no Google: confirmar se existe e atualizar o WhatsApp.
 - Google Ads 538-138-4156 está cancelado: reativar ou trocar de conta.
-- Seguradoras de vida parceiras, registro SUSEP e horário de atendimento.
+- Seguradoras de vida parceiras. (Registro SUSEP: o Bruno decidiu não incluir, em 12/11.)
 - Bing Webmaster Tools, depois do Search Console.
