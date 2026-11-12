@@ -16,7 +16,7 @@ Site estático de https://www.brokerdf.com.br/, hospedado no GitHub Pages a part
 | 002 | GA4 pela tag do Google `GTM-MNNHV7PD` (envia para `G-V0QZN9HMV8`) | Publicada em 2026-11-12 (PR #2) |
 | 003 | WhatsApp trocado para (61) 99983-5948 | Publicada em 2026-11-09 (PR #3) |
 | docs | README e specs 002/003 (PR #4); atualização após publicar o GA4 (PR #5) | Publicadas em 2026-11-12 |
-| 006 | Largura no celular, contraste do botão de WhatsApp, foto em WebP, horário nos dados estruturados | Em revisão (PR #6) |
+| 006 | Largura no celular, contraste do botão de WhatsApp, foto em WebP, horário nos dados estruturados | Publicada em 2026-11-12 (PR #6) |
 
 ## Pendências
 - Confirmar visitas no Tempo real do GA4 (tag publicada em 2026-11-12).

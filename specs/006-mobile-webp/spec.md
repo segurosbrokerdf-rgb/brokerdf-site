@@ -1,6 +1,6 @@
 # Spec 006: largura no celular, contraste e foto em WebP
 
-Status: em revisão (branch `006-mobile-webp`, PR #6). Trabalho de 2026-11-12.
+Status: publicada em 2026-11-12 (PR #6, merge `bf86769`). Conferido no ar: largura 390 px no celular, WebP servido (6,5 KB), horário nos dados estruturados, tag do Google e WhatsApp mantidos.
 
 ## Problemas
 1. No celular (390 px), a home tinha 693 px de largura e arrastava para o lado. Causas:
